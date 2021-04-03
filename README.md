@@ -5,7 +5,7 @@ A library for teleporting rich data to another place.
 ## Install
 
 ```sh
-yarn add telejson
+npm install json2bigint
 ```
 
 ## What can it do, what can't it do:
