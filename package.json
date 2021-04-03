@@ -1,7 +1,7 @@
 {
-  "name": "telejson",
-  "version": "5.1.0",
-  "description": "",
+  "name": "json2bigint",
+  "version": "5.1.1",
+  "description": "json with bigint, date, datetime, transformer",
   "keywords": [
     "JSON",
     "cyclic",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybooks/telejson.git"
+    "url": "https://github.com/sambacha/telejson.git"
   },
   "files": [
     "dist/*"
@@ -27,10 +27,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "babel src --out-dir dist --extensions \".ts\" && tsc --emitDeclarationOnly",
-    "lint": "eslint src --ext .js,.ts",
-    "prepublish": "yarn build",
-    "test": "TZ=UTC jest"
+    "build": "NODE_ENV=production npx babel src --out-dir dist --extensions \".ts\" && tsc --emitDeclarationOnly",
+    "lint": "npx eslint src --ext .js,.ts",
+    "prepublish": "npm run-script build",
+    "test": "TZ=UTC npx jest"
   },
   "eslintConfig": {
     "extends": [
@@ -66,8 +66,5 @@
     "prettier": "^2.1.2",
     "regenerator-runtime": "^0.13.7",
     "typescript": "^4.0.5"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

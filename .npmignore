@@ -1,0 +1,7 @@
+prettier.config.js
+test
+#tsconfig.json
+.github/
+.eslintrc
+.prettierrc
+#.babelrc.js
