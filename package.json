@@ -1,5 +1,5 @@
 {
-  "name": "json-bigint",
+  "name": "json2bigint",
   "version": "5.1.1",
   "description": "json with bigint, date, datetime, transformer",
   "keywords": [
@@ -66,8 +66,5 @@
     "prettier": "^2.1.2",
     "regenerator-runtime": "^0.13.7",
     "typescript": "^4.0.5"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
